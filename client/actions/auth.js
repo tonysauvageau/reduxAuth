@@ -1,5 +1,5 @@
 const setUser = (user = {} ) => {
-  return { type: 'USER', usre }
+  return { type: 'USER', user }
 }
 
 export const refreshLogin = (user = null) => {
@@ -11,7 +11,7 @@ export const refreshLogin = (user = null) => {
         url: '/api/auth/usr',
         type: 'GET'
       }).done ( user => {
-        dispatch(setUser(usre));
+        dispatch(setUser(user));
       });
     }
   }

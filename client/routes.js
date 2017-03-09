@@ -20,8 +20,8 @@ const AdminRoutes = AdminAccess( props => props.children )
 export default (
   <Route>
     <Route path="/" component={App}>
-      <Route path="/singup" component={Auth} title="Sign Up" />
-      <Route path="/signin" component={Auth} title="Sign In" />
+      <Route path="/signup" component={Auth} title="Sign Up" />
+      <Route path="/login" component={Auth} title="Sign In" />
       <Route component={AuthenticatedRoutes}>
         <Route path="/dashboard" component={Dashboard} />
         <Route component={AdminRoutes}>

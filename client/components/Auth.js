@@ -29,12 +29,14 @@ class Auth extends React.Component {
             required
             ref={ n => this.email = n }
             placeholder="Enter your email"
+            autocomplete="new-email"
           />
           <input
             type="password"
             required
             ref={ n => this.password = n }
             placeholder="password"
+            autocomplete="new-password"
           />
           <button className="btn green lighten-4">{title}</button>
         </form>
